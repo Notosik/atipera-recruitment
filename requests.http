@@ -1,0 +1,23 @@
+#### GET user repositories
+GET https://api.github.com/users/ddd-by-examples/repos
+Accept: application/vnd.github+json
+#Authorization: Bearer <YOUR-TOKEN>
+X-GitHub-Api-Version: 2022-11-28
+
+
+### GET Notosik repositories
+GET https://api.github.com/users/notosik/repos
+Accept: application/vnd.github+json
+#Authorization: Bearer <YOUR-TOKEN>
+X-GitHub-Api-Version: 2022-11-28
+
+### GET Notosik atipera-recruitment branches
+GET https://api.github.com/repos/Notosik/atipera-recruitment/branches
+Accept: application/vnd.github+json
+#Authorization: Bearer <YOUR-TOKEN>
+X-GitHub-Api-Version: 2022-11-28
+
+
+### Local call
+GET localhost:8080/repositories/Notosik
+Accept: application/jsonsasd
