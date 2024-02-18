@@ -17,11 +17,8 @@ For each branch it’s name and last commit sha
 As an api consumer, given not existing github user, I would like to receive 404 response in such a format:
 ```json
 {
-
-    “status”: ${responseCode}
-
-    “message”: ${whyHasItHappened}
-
+  "status": ${responseCode}
+  "message": ${whyHasItHappened}
 }
 ```
 
@@ -70,3 +67,4 @@ record ApiError(Integer status, String message){}
 2. Handling remaining exceptions uniformly, ensuring they return an `ApiError` model consistently
 3. Write much more tests. For feign client using for example WireMock
 4. In case of an increasing number of endpoints, Swagger could be added
+5. There also more logs could be added
