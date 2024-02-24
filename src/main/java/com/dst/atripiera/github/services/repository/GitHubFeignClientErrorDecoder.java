@@ -14,7 +14,6 @@ import java.io.IOException;
 class GitHubFeignClientErrorDecoder implements ErrorDecoder {
     private final ErrorDecoder errorDecoder = new Default();
 
-
     @Override
     public Exception decode(String methodKey, Response response) {
 
